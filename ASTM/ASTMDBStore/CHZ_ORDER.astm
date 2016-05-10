@@ -1,0 +1,7 @@
+update CHZ_ORDER set PENDING= 'C', 
+RESULT= '@0' , 
+RESULT_UNIT= '@1' , 
+RESULT_DATE= @2,
+CIHAZ_ID= @3
+where TUBE_BARCODE= @4
+and LIS_TEST=(select LIS_TEST from CHZ_TEST where CIHAZ_TEST= '' and CIHAZ_ID= );

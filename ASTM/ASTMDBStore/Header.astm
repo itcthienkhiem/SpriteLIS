@@ -1,0 +1,5 @@
+INSERT INTO Data (Name,PhoneNo,Address)
+ VALUES (" + 
+ txtName.Text + 
+ "," + txtPhone.Text + "," 
+ + txtAddress.Text + ");
